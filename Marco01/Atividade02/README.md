@@ -1,5 +1,5 @@
 # Marco 01
-## [Atividade 02](./Atividade02/)
+## Atividade 02
 
 ### Criar uma classe Aluno. Sobre um aluno devem ser guardados:
 - Nome

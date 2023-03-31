@@ -1,6 +1,6 @@
 # Marco 01
 
-## [Atividade 01](./Atividade01/)
+## Atividade 01
 ### Implemente o TAD (Tipo Abstrato de Dado) PontoCartesiano em Java
 
 - Crie um método construtor. 
