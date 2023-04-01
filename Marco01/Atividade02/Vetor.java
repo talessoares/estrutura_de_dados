@@ -1,5 +1,5 @@
 public class Vetor {
-    private Aluno[] alunos = new Aluno[4];
+    private Aluno[] alunos;
     private int totalAlunos = 0;
 
     public Vetor(){
@@ -8,6 +8,10 @@ public class Vetor {
 
 
     public void adiciona(Aluno aluno){
+        if (totalAlunos == alunos.length){
+            return;
+        }
+
         this.alunos[this.totalAlunos] = aluno;
         this.totalAlunos++;
     }   
