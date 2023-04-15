@@ -31,5 +31,5 @@ public class Node {
 
     public Node setNext(Node n) { return this.next = n; }
 
-    public Node setPrevious(Node n) { return this.getLast().setNext(n);}
+    public Node setPrevious(Node n) { return this.previous = n; }
 }

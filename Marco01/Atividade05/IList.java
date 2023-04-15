@@ -1,7 +1,7 @@
 public interface IList {
     
-    public void addBegin(int info) throws Exception;
-    public void addEnd(int info) throws Exception;
+    public void addBegin(int info);
+    public void addEnd(int info);
     public boolean isEmpty();
     public boolean remove(int info);
     public int size();

@@ -7,7 +7,7 @@ public class LDE implements IList {
         this.end = null;
     }
     
-    public void addBegin(int info) throws Exception {
+    public void addBegin(int info) {
         Node newNode = new Node(info);
         
         if (begin == null){
@@ -19,10 +19,9 @@ public class LDE implements IList {
             begin.setPrevious(newNode);
             begin = newNode;
         }
-        System.out.println("inicio" + begin.getInfo() + "   Fim"+end.getInfo());
     }
     
-    public void addEnd(int info) throws Exception{
+    public void addEnd(int info) {
         Node newNode = new Node(info);
        
         
@@ -35,7 +34,6 @@ public class LDE implements IList {
            end.setNext(newNode);
            end = newNode;
         }
-        System.out.println("inicio" + begin.getInfo() + "   Fim"+end.getInfo());
     }
     
     public boolean isEmpty() {
