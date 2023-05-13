@@ -8,7 +8,7 @@ public class Vetor {
     private int mid;
 
     public Vetor(){
-        this.array = new int[5];
+        this.array = new int[1000];
     }
 
     public void add(int number){
@@ -53,7 +53,7 @@ public class Vetor {
         return maior;
     }
 
-    public int[] gerarVetorAleatorio() {
+    public int[] generateRandomArray() {
         int[] vetor = new int[1000];
         Random random = new Random();
 
@@ -64,7 +64,7 @@ public class Vetor {
         return vetor;
     }
 
-    public int[] geraVetorSequencial(){
+    public int[] generateSequentialArray(){
         int[] vetor = new int[1000];
 
         for (int i = 0; i < 1000; i++) {
@@ -93,21 +93,18 @@ public class Vetor {
         return true;
     }
 
-    public static boolean recursiveBinarySearch(int[] array, int value, int left, int right) {
+    public static boolean recBinarySearch(int[] array, int value, int left, int right) {
         if (left > right) {
-            return false; // valor não encontrado
+            return false;
         }
         int mid = (left + right) / 2;
         if (array[mid] == value) {
-            return true; // valor encontrado
+            return true;
         } else if (array[mid] > value) {
-            return recursiveBinarySearch(array, value, left, mid - 1); // procurar na metade esquerda
+            return recBinarySearch(array, value, left, mid - 1); // procurar na metade esquerda
         } else {
-            return recursiveBinarySearch(array, value, mid + 1, right); // procurar na metade direita
+            return recBinarySearch(array, value, mid + 1, right); // procurar na metade direita
         }
     }
     
-    
-
-
 }
