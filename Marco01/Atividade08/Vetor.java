@@ -93,7 +93,7 @@ public class Vetor {
         return true;
     }
 
-    public static boolean recBinarySearch(int[] array, int value, int left, int right) {
+    public boolean recBinarySearch(int[] array, int value, int left, int right) {
         if (left > right) {
             return false;
         }
