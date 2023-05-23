@@ -1,4 +1,4 @@
-# Marco 01
+# Estrutura de Dados
 
 ## [Atividade 01](./Atividade01/)
 ## [Atividade 02](./Atividade02/)
