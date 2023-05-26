@@ -10,4 +10,4 @@
 
 Resposta:
 
-Ordem crescente de complexidade: D, A, C, B
+Ordem crescente de complexidade: D, C, A, B
