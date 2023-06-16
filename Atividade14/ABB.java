@@ -72,17 +72,15 @@ public class ABB {
     }
 
     public void printTodaArvore(Noh raiz) {
-        printTodaArvoreRecursivo(raiz, 0);
+        printTodaArvoreRecursivo(raiz);
     }
 
-    private void printTodaArvoreRecursivo(Noh noh, int nivel) {
+    private void printTodaArvoreRecursivo(Noh noh) {
         if (noh != null) {
-            printTodaArvoreRecursivo(noh.dir, nivel + 1);
+            System.out.println("(" + noh.valor + ")");
 
-            String espacos = "  ".repeat(nivel);
-            System.out.println(espacos + "(" + noh.valor + ")");
-
-            printTodaArvoreRecursivo(noh.esq, nivel + 1);
+            printTodaArvoreRecursivo(noh.esq);
+            printTodaArvoreRecursivo(noh.dir);
         }
     }
 
