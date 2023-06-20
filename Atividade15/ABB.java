@@ -119,9 +119,9 @@ public class ABB {
         }
 
         if (element < raiz.getValor()) {
-            return buscar(raiz.getEsq(), element); // Search in the left subtree
+            return buscar(raiz.getEsq(), element);
         } else {
-            return buscar(raiz.getDir(), element); // Search in the right subtree
+            return buscar(raiz.getDir(), element);
         }
     }
 
@@ -137,43 +137,9 @@ public class ABB {
         }
     }
 
-    public void printLargura() {
-        if (isEmpty()) {
-            System.out.println("Empty tree");
-            return;
-        }
-
-        Fila f = new Fila();
-        f.insere(this.raiz);
-
-        int largura = 1; // Inicializa a largura com 1 (raiz)
-
-        while (!f.isEmpty()) {
-            int nivelSize = f.size(); // Tamanho do nível atual
-
-            while (nivelSize > 0) {
-                Noh atual = f.remove();
-                System.out.println(atual.getValor());
-
-                if (atual.getEsq() != null)
-                    f.insere(atual.getEsq());
-                if (atual.getDir() != null)
-                    f.insere(atual.getDir());
-
-                nivelSize--;
-            }
-
-            if (!f.isEmpty()) {
-                largura++; // Incrementa a largura ao passar para o próximo nível
-            }
-        }
-
-        System.out.println("Largura da árvore: " + largura);
-    }
-
     public void removeNoh(int element) {
         if (isEmpty()) {
-            System.out.println("Empty tree");
+            System.out.println("Arvore vazia!");
             return;
         }
 
