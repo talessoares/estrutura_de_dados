@@ -44,18 +44,5 @@ public class Noh {
     public void setPai(Noh pai) {
         this.pai = pai;
     }
-
-    public void setProx(Noh novo) {
-        this.setProx(novo);
-    }
-
-    public Noh getProx() {
-        return null;        
-    }
-
-    public char[] getInfo() {
-        return null;
-    }
-
     
 }

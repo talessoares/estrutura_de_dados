@@ -29,8 +29,6 @@ public class Main {
         System.out.println("A raiz da arvore é: " + arvore.getRaiz().getValor());
 
 
-        arvore.printLargura();
-
         System.out.println("Removendo o elemento 20 da arvore: ");
         arvore.removeNoh(20);
 
